@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="ticketsPageOneVM" type="com.osynda.app.modules.ticketspageone.data.viewmodel.TicketsPageOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumneventtickets"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_6pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearTicketspageOn"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEventTickets"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{ticketsPageOneVM.ticketsPageOneModel.txtEventTickets}"
+                style="@style/txtPoppinsmedium20" tools:text="@string/lbl_event_tickets"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerListrectangleseventysix"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_19pxh}" tools:itemCount="3" tools:listitem="@layout/row_listrectangleseventysix"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginRowModel" type="com.osynda.app.modules.login.data.model.LoginRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackemailaddress"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameStackrectanglefiftyeight"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_57pxv"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_362pxh">
+            <ImageView android:id="@+id/imageRectangleFiftyEight"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_57pxh"
+                android:layout_width="@dimen/_362pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle58"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle58"/>
+            <LinearLayout android:id="@+id/linearRowemail"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEmail"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{loginRowModel.txtEmail}"
+                    style="@style/txtMontserratromanmedium14" tools:text="@string/msg_samimohamed23_g"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_border_deep_purple_a700_radius_8_065"
+                    android:id="@+id/btnCheckmark"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_104pxh"
+                    android:layout_width="@dimen/_16pxh"
+                    android:paddingHorizontal="@dimen/_4pxh"
+                    android:paddingVertical="@dimen/_4pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_checkmark" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtEmailAddress"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{loginRowModel.txtEmailAddress}"
+            style="@style/txtMontserratromanregular14" tools:text="@string/lbl_email_address"/>
+    </FrameLayout>
+</layout>

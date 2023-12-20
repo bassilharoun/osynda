@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleeightytwoOneRowModel" type="com.osynda.app.modules.eventdetialsone.data.model.ListrectangleeightytwoOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangleeightytwoOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageRectangleEightyTwoOne"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_width="@dimen/_48pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_25pxh}"
+            imageRes="@{@drawable/img_rectangle82_1x50}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle82_1x50"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnjaneperry"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_weight="0.66" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtJanePerry"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleeightytwoOneRowModel.txtJanePerry}"
+                style="@style/txtPoppinsregular13_1" tools:text="@string/lbl_jane_perry"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRogueAmendiare"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleeightytwoOneRowModel.txtRogueAmendiare}"
+                style="@style/txtPoppinslight10_1" tools:text="@string/msg_rogue_amendiare"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

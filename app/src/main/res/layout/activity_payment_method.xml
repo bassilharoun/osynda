@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="paymentMethodVM" type="com.osynda.app.modules.paymentmethod.data.viewmodel.PaymentMethodVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearPaymentmethod"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackcheckmark"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_166pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_130pxv"
+            android:layout_width="@dimen/_166pxh" style="@style/groupStylegreen_600cornerRadius">
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_59pxh"
+                android:layout_marginHorizontal="@dimen/_40pxh"
+                android:layout_marginVertical="@dimen/_40pxv"
+                android:layout_width="@dimen/_78pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark_white_a700"/>
+        </FrameLayout>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtYouaresuccess"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="match_parent"
+            android:text="@{paymentMethodVM.paymentMethodModel.txtYouaresuccess}"
+            style="@style/txtPoppinsregular25_1" tools:text="@string/msg_you_are_success"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:text="@{paymentMethodVM.paymentMethodModel.txtDescription}"
+            style="@style/txtPoppinsregular13_3" tools:text="@string/msg_we_are_waiting"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSeeYourTicketOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_206pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_see_your_ticket"
+            android:textAllCaps="false" style="@style/btnSolidRounded_4" tools:text="@string/lbl_see_your_ticket"/>
+    </LinearLayout>
+</layout>

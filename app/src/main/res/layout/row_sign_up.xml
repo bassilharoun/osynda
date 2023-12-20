@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpRowModel" type="com.osynda.app.modules.signup.data.model.SignUpRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackfullname"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameStackrectanglefiftyeight"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_58pxv"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_362pxh">
+            <ImageView android:id="@+id/imageRectangleFiftyEight"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_58pxh"
+                android:layout_width="@dimen/_362pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle58"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle58"/>
+            <LinearLayout android:id="@+id/linearColumnvectorten"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <View android:background="@color/gray_300"
+                    android:id="@+id/viewVectorTen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_81pxh"
+                    android:layout_marginStart="@dimen/_81pxh" android:layout_width="@dimen/_25pxh"/>
+                <LinearLayout android:id="@+id/linearRowsamimohamedal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSamimohamedal"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.92"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{signUpRowModel.txtSamimohamedal}"
+                        style="@style/txtPoppinsregular14_2" tools:text="@string/msg_sami_mohamed_al"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_border_deep_purple_a700_radius_8_065"
+                        android:id="@+id/btnCheckmark"
+                        android:layout_height="@dimen/_16pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_130pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_16pxh"
+                        android:paddingHorizontal="@dimen/_4pxh"
+                        android:paddingVertical="@dimen/_4pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_checkmark" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtFullName"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{signUpRowModel.txtFullName}"
+            style="@style/txtMontserratromanregular14" tools:text="@string/lbl_full_name"/>
+    </FrameLayout>
+</layout>

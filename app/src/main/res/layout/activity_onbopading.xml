@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onbopadingVM" type="com.osynda.app.modules.onbopading.data.viewmodel.OnbopadingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnmaskgroup"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearOnbopading"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackmaskgroup"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" style="@style/groupStyle">
+                <ImageView android:id="@+id/imageMaskgroup"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_318pxh"
+                    android:layout_marginBottom="@dimen/_145pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_145pxv"
+                    android:layout_width="@dimen/_318pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_maskgroup}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_maskgroup"/>
+                <ImageView android:id="@+id/imageBackground"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_817pxh"
+                    android:layout_width="@dimen/_398pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_background}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_background"/>
+
+                <LinearLayout android:id="@+id/linearColumncontrast"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_71pxv"
+                    android:layout_marginEnd="@dimen/_39pxh"
+                    android:layout_marginStart="@dimen/_39pxh"
+                    android:layout_marginTop="@dimen/_71pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageContrast"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_69pxh"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_width="@dimen/_69pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_contrast"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_contrast"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{onbopadingVM.onbopadingModel.txtLanguage}"
+                        style="@style/txtPoppinsmedium22" tools:text="@string/msg_welcome_to_osyn"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtFromconcertsa"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{onbopadingVM.onbopadingModel.txtFromconcertsa}"
+                        style="@style/txtPoppinsregular13_2" tools:text="@string/msg_from_concerts_a"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumngetstarted"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyledeep_purple_5">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtGetStarted"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_97pxh"
+                            android:layout_marginStart="@dimen/_97pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{onbopadingVM.onbopadingModel.txtGetStarted}"
+                            style="@style/txtPoppinsmedium16" tools:text="@string/lbl_get_started"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtConfirmation"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{onbopadingVM.onbopadingModel.txtConfirmation}"
+                            style="@style/txtMontserratromanregular16" tools:text="@string/msg_already_have_an"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/loginTxtBtn"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="Login"
+                            android:textColor="@color/white"
+                            style="@style/txtPoppinsmedium20" tools:text="@string/lbl_login"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

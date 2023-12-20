@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cinemasOneVM" type="com.osynda.app.modules.cinemasone.data.viewmodel.CinemasOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnframe365"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCinemasOne"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700_border_gray_600_8c_radius_8_07"
+                android:drawableEnd="@drawable/img_linkedin_black_900"
+                android:drawablePadding="@dimen/_30pxh"
+                android:drawableStart="@drawable/img_rewind_gray_600"
+                android:ellipsize="end"
+                android:hint="@string/lbl_search_events"
+                android:id="@+id/etFrame365" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_14pxh"
+                android:paddingStart="@dimen/_12pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@={cinemasOneVM.cinemasOneModel.etFrame365Value}"
+                android:textColorHint="@color/gray_600"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowframe385"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <Spinner android:id="@+id/spinnerFrame385"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.31"
+                    android:layout_width="0dp" tools:listitem="@layout/spinner_item"/>
+                <Spinner
+                    android:background="@drawable/layer_list_border_black_900_radius_19_16"
+                    android:id="@+id/spinnerFrame393"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.31"
+                    android:layout_width="0dp" tools:listitem="@layout/spinner_item"/>
+                <Spinner
+                    android:background="@drawable/layer_list_border_black_900_radius_19_16"
+                    android:id="@+id/spinnerFrame394"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp" tools:listitem="@layout/spinner_item"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCinemasOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_14pxh}" tools:itemCount="6" tools:listitem="@layout/row_cinemas_one"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

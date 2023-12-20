@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="eventDetialsRowModel" type="com.osynda.app.modules.eventdetials.data.model.EventDetialsRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnrectangleeightytwoOne"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearRowrectangleeightytwoOne"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageRectangleEightyTwoOne1"
+                android:layout_height="@dimen/_1pxh"
+                android:layout_width="@dimen/_50pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_25pxh}"
+                imageRes="@{@drawable/img_rectangle82_1x50}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle82_1x50"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnjaneperry"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_weight="0.65" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtJanePerry"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{eventDetialsRowModel.txtJanePerry}"
+                    style="@style/txtPoppinsregular13_1" tools:text="@string/lbl_jane_perry"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRogueAmendiare"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_317pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{eventDetialsRowModel.txtRogueAmendiare}"
+                    style="@style/txtPoppinslight10_1" tools:text="@string/msg_rogue_amendiare"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowkeanureeves"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginTop="@dimen/_354pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageRectangleEightyTwoOne2"
+                android:layout_height="@dimen/_1pxh"
+                android:layout_width="@dimen/_50pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_25pxh}"
+                imageRes="@{@drawable/img_rectangle82_1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle82_1"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnkeanureeves"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_weight="0.65" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtKeanuReeves"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{eventDetialsRowModel.txtKeanuReeves}"
+                    style="@style/txtPoppinsregular13_1" tools:text="@string/lbl_keanu_reeves"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtJohnnySilverha"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_378pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{eventDetialsRowModel.txtJohnnySilverha}"
+                    style="@style/txtPoppinslight10_1" tools:text="@string/msg_johnny_silverha"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

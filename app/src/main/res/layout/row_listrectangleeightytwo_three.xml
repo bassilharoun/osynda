@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleeightytwoThreeRowModel" type="com.osynda.app.modules.eventdetialsone.data.model.ListrectangleeightytwoThreeRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangleeightytwoThree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageRectangleEightyTwoThree"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_width="@dimen/_50pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_rectangle82_2}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle82_2"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncarlatassara"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_weight="0.65" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCarlaTassara"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleeightytwoThreeRowModel.txtCarlaTassara}"
+                style="@style/txtPoppinsregular13_1" tools:text="@string/lbl_carla_tassara"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtJudyAlvarez"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleeightytwoThreeRowModel.txtJudyAlvarez}"
+                style="@style/txtPoppinslight10_1" tools:text="@string/lbl_judy_alvarez"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listticketcounterRowModel" type="com.osynda.app.modules.paymentmethodone.data.model.ListticketcounterRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnticketcounter"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTicketCounter"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listticketcounterRowModel.txtTicketCounter}"
+            style="@style/txtPoppinsregular17" tools:text="@string/lbl_1_ticket"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTaxes"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listticketcounterRowModel.txtTaxes}"
+            style="@style/txtPoppinsregular17" tools:text="@string/lbl_taxes"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTotal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listticketcounterRowModel.txtTotal}"
+            style="@style/txtPoppinsmedium17" tools:text="@string/lbl_total"/>
+    </LinearLayout>
+</layout>

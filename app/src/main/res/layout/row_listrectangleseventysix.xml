@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleseventysixRowModel" type="com.osynda.app.modules.ticketspageone.data.model.ListrectangleseventysixRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleseventysix"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <FrameLayout android:id="@+id/frameStackrectangleseventysix"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_199pxv"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginStart="@dimen/_2pxh" android:layout_width="@dimen/_364pxh">
+            <ImageView android:id="@+id/imageRectangleSeventySix"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_199pxh"
+                android:layout_width="@dimen/_364pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_10pxh}"
+                imageRes="@{@drawable/img_rectangle76}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle76"/>
+            <LinearLayout android:id="@+id/linearColumn23feb"
+                android:layout_gravity="top|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:orientation="vertical" style="@style/groupStyledeep_purple_3">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txt23Feb"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{listrectangleseventysixRowModel.txt23Feb}"
+                    android:textAllCaps="true"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/lbl_23_feb"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtYayoiKusamaI"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listrectangleseventysixRowModel.txtYayoiKusamaI}"
+            style="@style/txtPoppinsmedium15" tools:text="@string/msg_yayoi_kusama_i3"/>
+        <LinearLayout android:id="@+id/linearRowticketidshtwentythree"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearRowellipsenine"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55" android:layout_width="0dp" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageEllipseNine"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse9_17x17}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse9_17x17"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOrganizedbywa"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_weight="0.84"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listrectangleseventysixRowModel.txtOrganizedbywa}"
+                    style="@style/txtPoppinsregular9" tools:text="@string/msg_organized_by_wa"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTicketIDSHTwentyThree"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_marginStart="@dimen/_51pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.45" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listrectangleseventysixRowModel.txtTicketIDSHTwentyThree}"
+                style="@style/txtPoppinsmedium12" tools:text="@string/msg_ticket_id_sh23"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

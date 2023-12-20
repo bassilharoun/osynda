@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipsetwentyRowModel" type="com.osynda.app.modules.paymentmethodtwo.data.model.ListellipsetwentyRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipsetwenty"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_38_radius_12"
+            android:id="@+id/viewEllipseTwenty"
+            android:layout_height="@dimen/_24pxh"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_24pxh"/>
+        <ImageView android:id="@+id/imageFrame431"
+            android:layout_height="@dimen/_27pxh"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_width="@dimen/_20pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_frame431"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_frame431"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtApplePay"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_weight="0.63" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listellipsetwentyRowModel.txtApplePay}"
+            style="@style/txtPoppinsregular16_4" tools:text="@string/lbl_applepay"/>
+    </LinearLayout>
+</layout>
